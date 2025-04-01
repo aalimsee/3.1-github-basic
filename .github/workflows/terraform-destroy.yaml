@@ -1,7 +1,7 @@
 
 
 
-name: Terraform Deployment
+name: Terraform Destroy
 
 on:  
   workflow_dispatch:  
