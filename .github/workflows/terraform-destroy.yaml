@@ -8,9 +8,8 @@ on:
     inputs:  
       environment:  
         description: 'Environment to run tests against'  
-        type: environment  
+        type: environment
         required: true  
-
 
 env:            
   AWS_REGION: us-east-1
