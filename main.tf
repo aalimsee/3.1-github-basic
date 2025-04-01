@@ -14,11 +14,12 @@ terraform {
   }
 }
 
+
 resource "aws_s3_bucket" "example" {
-  bucket = "aalimsee-tf-s3bucket"
+  bucket = "aalimsee-tf-s3bucket-${terraform.workspace}"
 
   tags = {
     Name        = "aaron"
-    Environment = "dev"
+    Environment = terraform.workspace
   }
 }
